@@ -1,0 +1,15 @@
+# Server
+server.port=8080
+
+# H2 Database
+spring.datasource.url=jdbc:h2:mem:midasdb
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+
+# Kafka
+spring.kafka.bootstrap-servers=localhost:9092
+spring.kafka.consumer.group-id=midas-group
+spring.kafka.consumer.auto-offset-reset=earliest
